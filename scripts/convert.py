@@ -44,6 +44,8 @@ def add_tab():
 
 
 def extract_frames(video_path: str, output_path: str, custom_fps=None):
+    video_path=r"{}".format(video_path)
+    output_path=r"{}".format(output_path)
     """从视频文件中提取帧并输出为png格式
 
     Args:
@@ -79,6 +81,8 @@ def extract_frames(video_path: str, output_path: str, custom_fps=None):
 
 
 def merge_frames(frames_path: str, output_path: str, fps=None):
+    frames_path=r"{}".format(frames_path)
+    output_path=r"{}".format(output_path)
     """将指定文件夹内的所有png图片按顺序合并为一个mp4视频文件
 
     Args:
